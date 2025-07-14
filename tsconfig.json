@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // Better modern JavaScript support
+    "module": "CommonJS",                      // Required for Node.js
+    "moduleResolution": "Node",                // Required to resolve node_modules and file paths
+    "outDir": "dist",                          // Where compiled .js files go
+    "rootDir": "src",                          // Where your source .ts files live
+    "esModuleInterop": true,                   // Needed for importing CommonJS modules
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],                          // Only compile files in src/
+  "exclude": ["node_modules", "dist"]          // Exclude build/output folders
+}
