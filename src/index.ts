@@ -9,7 +9,13 @@ import scheduleRoutes from './routes/schedule';
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({
+  origin: [
+    'http://localhost:3000', // for local dev
+    'https://scheduling-a4zlipacq-stringify-protfolios-projects.vercel.app' // for production
+  ],
+  credentials: true,
+}));
 app.use(express.json());
 
 
