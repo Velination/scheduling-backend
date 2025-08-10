@@ -12,7 +12,8 @@ const app = express();
 app.use(cors({
   origin: [
     'http://localhost:3000', // for local dev
-    'https://scheduling-a4zlipacq-stringify-protfolios-projects.vercel.app' // for production
+    'https://scheduling-a4zlipacq-stringify-protfolios-projects.vercel.app', // for production
+    'https://scheduling-ui-eight.vercel.app'
   ],
   credentials: true,
 }));
